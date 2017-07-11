@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'mobile_devices'
-  s.version       = '0.1.0'
+  s.version       = '0.1.1'
   s.licenses      = ['MIT']
   s.summary       = "Lookup iOS devices from device type, Android from Build.PRODUCT"
   s.description   = "Turn names like iPhone6,2 and zerofltespr into iPhone 5S and Galaxy S6"
