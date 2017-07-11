@@ -1,6 +1,6 @@
-# mobile_devices
+# RubyGem mobile_devices
 
-Convert code names into real names using rikas/iosdevices and vinuthomas/android-devices.
+Convert code names into real names using [@rikas/iosdevices](https://github.com/rikas/iosdevices) and data from [@vinuthomas/android-devices](https://github.com/vinuthomas/android-devices).
 
 ```
 require 'mobile_devices'
