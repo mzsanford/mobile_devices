@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'mobile_devices'
-  s.version       = '0.3.0'
+  s.version       = '0.4.0'
   s.licenses      = ['MIT']
   s.summary       = "Lookup iOS devices from device type, Android from Build.PRODUCT"
   s.description   = "Turn names like iPhone6,2 and zerofltespr into iPhone 5S and Galaxy S6"
@@ -10,5 +10,6 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files -z`.split("\x0")
   s.require_paths = ['.']
 
-  s.add_runtime_dependency 'ios-devices', '~> 0.3.0'
+  s.add_runtime_dependency 'ios-devices', '~> 0.4.0'
+  s.required_ruby_version = '>= 3.1'
 end
