@@ -11,7 +11,7 @@ module MobileDevices
 
     def initialize(file)
       @_lookup = {}
-      JSON.parse(File.read(file)).each do |row|
+      JSON.parse(File.read(file, encoding: Encoding::UTF_8)).each do |row|
         name = row[1]
         codename = row[2]
         @_lookup[codename] = name
