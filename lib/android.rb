@@ -12,9 +12,14 @@ module MobileDevices
     def initialize(file)
       @_lookup = {}
       JSON.parse(File.read(file, encoding: Encoding::UTF_8)).each do |row|
+        manufacturer = row[0]
         name = row[1]
         codename = row[2]
-        @_lookup[codename] = name
+        if manufacturer.empty? || name.downcase.start_with?(manufacturer.downcase)
+          @_lookup[codename] = name
+        else
+          @_lookup[codename] = manufacturer + " " + name
+        end
       end
     end
 
