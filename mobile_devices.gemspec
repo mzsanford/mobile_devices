@@ -11,5 +11,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['.']
 
   s.add_runtime_dependency 'ios-devices', '~> 0.4.0'
+  s.add_development_dependency 'minitest', '~> 5.0'
   s.required_ruby_version = '>= 3.1'
 end
