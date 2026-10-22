@@ -9,9 +9,9 @@ class TestMobileDevices < Minitest::Test
   end
 
   def test_android_lookup
-    assert_equal 'Galaxy S6', MobileDevices.get_name('zerofltespr')
-    assert_equal 'Pixel 9 Pro', MobileDevices.get_name('caiman')
-    assert_equal 'Galaxy S24 Ultra', MobileDevices.get_name('e3q')
+    assert_equal 'Samsung Galaxy S6', MobileDevices.get_name('zerofltespr')
+    assert_equal 'Google Pixel 9 Pro', MobileDevices.get_name('caiman')
+    assert_equal 'Samsung Galaxy S24 Ultra', MobileDevices.get_name('e3q')
   end
 
   def test_unknown_android_returns_nil
@@ -31,7 +31,7 @@ class TestMobileDevices < Minitest::Test
     verbose, $VERBOSE = $VERBOSE, nil
     Encoding.default_external = Encoding::US_ASCII
     android = MobileDevices::Android.new(DEFAULT_DATA_FILE)
-    assert_equal 'Pixel 8 Pro', android.name('husky')
+    assert_equal 'Google Pixel 8 Pro', android.name('husky')
   ensure
     Encoding.default_external = original
     $VERBOSE = verbose
