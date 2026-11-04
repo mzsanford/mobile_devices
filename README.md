@@ -9,7 +9,7 @@ puts MobileDevices.get_name('iPhone6,2')
 # "iPhone 5s"
 
 puts MobileDevices.get_name('zerofltespr')
-# "Galaxy S6"
+# "Samsung Galaxy S6"
 ```
 
 ## Android data
